@@ -66,7 +66,6 @@ namespace MyOwnJsonConverter
 
             foreach (PropertyInfo p in t.GetProperties())
             {
-                //Console.WriteLine(p.PropertyType);
                 if (p.PropertyType == typeof(String))
                 {
                     s.Append($"\"{p.Name}\":\"{p.GetValue(obj, null)}\"");
